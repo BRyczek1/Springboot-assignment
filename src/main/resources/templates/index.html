@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:replace="fragments/_header :: head(pageTitle='Pewaukee Museum of Natural History')">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="Step_1.html">Step 1</a>
+    <br>
+    <a href="Step_2.html">Step 2</a>
+    <br>
+    <a href="Step_3.html">Step 3</a>
+    <br>
+    <a href="Step_4.html">Step 4</a>
+    <br>
+
+</head>
+
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h2>
+    How to bake cookies!
+</h2>
+
+<img th:src="@{/img/cookies.png}" alt="cookies">
+
+</p>
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

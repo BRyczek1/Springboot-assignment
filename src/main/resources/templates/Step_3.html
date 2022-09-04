@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:replace="fragments/_header :: head(pageTitle='Ice Age Trail')">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="Step_1.html">Step 1</a>
+    <br>
+    <a href="Step_2.html">Step 2</a>
+    <br>
+    <a href="Step_3.html">Step 3</a>
+    <br>
+    <a href="Step_4.html">Step 4</a>
+    <br>
+</head>
+
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h2>
+    Bake
+</h2>
+<img class="left" th:src="@{/img/bake.jpg}" alt="bake">
+<p>
+    Bake for about 10 minutes or until golden brown on the edges.
+</p>
+
+</p>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

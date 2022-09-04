@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Wisco Fossils')">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="Step_1.html">Step 1</a>
+    <br>
+    <a href="Step_2.html">Step 2</a>
+    <br>
+    <a href="Step_3.html">Step 3</a>
+    <br>
+    <a href="Step_4.html">Step 4</a>
+    <br>
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Preheat the oven</h2>
+<img class="left" th:src="@{/img/preheat.jpg}" alt="preheat">
+<p>
+Preheat the oven to 175 degrees Fahrenheit.
+</p>
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:replace="fragments/_header :: head(pageTitle='Trilobites')">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="Step_1.html">Step 1</a>
+    <br>
+    <a href="Step_2.html">Step 2</a>
+    <br>
+    <a href="Step_3.html">Step 3</a>
+    <br>
+    <a href="Step_4.html">Step 4</a>
+    <br>
+</head>
+
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h2>    Enjoy!</h2>
+<img class="left" th:src="@{/img/enjoy.jpg}" alt="enjoy">
+
+<p>
+    enjoy your prefect cookies! make sure to let them cool a little bit.
+</p>
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
